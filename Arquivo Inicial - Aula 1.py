@@ -24,7 +24,9 @@ pyautogui.click(x=2890,y=1406) # clicar em fazer download
 
 time.sleep(5) # esperar o download
 # Passo 4: Importar a base de vendas pro Python
-
+import pandas as pd
+tabela = pd.read_excel(r"C:\Users\Python\Downloads\Vendas - Dez.xlsx")
+display (tabela)
 # Passo 5: Calcular o faturamento e quantidade de produtos vendidos (os indicadores)
 
 # Passo 6: Enviar email para diretoria
